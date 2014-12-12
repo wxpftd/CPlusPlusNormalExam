@@ -5,13 +5,15 @@ using namespace std;
 
 int main(int argc, char *argv[])
 {
-	Stack<int> stack;
-	for (int i = 0; i < 2000; i ++)
-	{
-		stack.push_T(i);	
-	}
+    Stack<int> stack;
+    for (int i=0; i<20; i++)
+    {
+        stack.push_T(i);	
+    }
 
-	stack.printStack();	
-	
-	return 0;
+    stack.printStack();	
+    cout << stack.contains(10) << endl;;
+    cout << stack.contains(30) << endl;;
+
+    return 0;
 }

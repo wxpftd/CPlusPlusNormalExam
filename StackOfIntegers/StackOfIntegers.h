@@ -14,6 +14,7 @@ public:
 	void push_i(const int);
 	int pop_i() throw(MyEmptyStackException);
 	bool empty();
+        int getSize();
 };
 
 #endif
